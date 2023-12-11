@@ -27,3 +27,11 @@ Startdate date,
 Enddate date,
 Type enum('dailylease','monthlylease')
 );
+
+CREATE TABLEPayment(
+paymentID INT PRIMARY KEY,
+LeaseID INT,
+paymentdate DATE,
+amount DECIMAL(10,2),
+FOREIGN KEY (LeaseID) REFERENCES Lease(LeaseID)
+);
