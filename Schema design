@@ -28,7 +28,7 @@ Enddate date,
 Type enum('dailylease','monthlylease')
 );
 
-CREATE TABLEPayment(
+CREATE TABLE Payment(
 paymentID INT PRIMARY KEY,
 LeaseID INT,
 paymentdate DATE,
