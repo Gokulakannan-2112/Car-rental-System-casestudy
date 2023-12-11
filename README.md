@@ -17,11 +17,11 @@ of days or months.
 • Calculate the total revenue from payments
 
 # Contributors
-Dhifani Steniksha D ||
+Dhifani Steniksha D 
 
-Gokulakannan V ||
+Gokulakannan V 
 
-Rashmi Mallur ||
+Rashmi Mallur 
 
 Subiksha
 
