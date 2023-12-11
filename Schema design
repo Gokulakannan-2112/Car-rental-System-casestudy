@@ -1,3 +1,17 @@
+-------------------- Vehicle Table ---------------------
+
+CREATE TABLE Vehicle (
+    vehicleID INT PRIMARY KEY,
+    make VARCHAR(50),
+    model VARCHAR(50),
+    year INT,
+    dailyRate DECIMAL(10, 2),
+    status ENUM('available', 'notAvailable'),
+    passengerCapacity INT,
+    engineCapacity DECIMAL(5, 2)
+);
+
+
 CREATE TABLE Lease(
 LeaseID INT PRIMARY KEY,
 foreign key(vehicleid) references vehicle(vehicleid),
