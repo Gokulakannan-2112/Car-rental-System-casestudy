@@ -1,7 +1,7 @@
-# Case Study
+Case Study
 # Car Rental System
 
-# Key Functionalities
+Key Functionalities
 1. Customer Management
 • Add new customers, Update customer information, Retrieve customer details.
 2. Car Management:
@@ -17,7 +17,11 @@ of days or months.
 
 # Contributors
 Dhifani Steniksha D
+
 Gokulakannan V
+
 Rashmi Mallur
+
 Subiksha
+
 Shahith
