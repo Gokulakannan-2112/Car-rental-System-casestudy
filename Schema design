@@ -11,6 +11,13 @@ CREATE TABLE Vehicle (
     engineCapacity DECIMAL(5, 2)
 );
 
+CREATE TABLE Customer (
+    customerID INT PRIMARY KEY,
+    firstName VARCHAR(100),
+    lastName VARCHAR(100,
+    email VARCHAR(100),
+    phoneNumber VARCHAR(20)
+);
 
 CREATE TABLE Lease(
 LeaseID INT PRIMARY KEY,
