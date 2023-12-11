@@ -25,4 +25,5 @@ foreign key(vehicleid) references vehicle(vehicleid),
 foreign key(customerid) references cutomer(customerid),
 Startdate date,
 Enddate date,
-Type varchar(15));
+Type enum('dailylease','monthlylease')
+);
