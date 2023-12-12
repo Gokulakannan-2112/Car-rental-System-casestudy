@@ -21,11 +21,13 @@ CREATE TABLE Customer (
 
 CREATE TABLE Lease(
 LeaseID INT PRIMARY KEY,
-foreign key(vehicleid) references vehicle(vehicleid),
-foreign key(customerid) references cutomer(customerid),
+vehicleid int,
+customerid int,
 Startdate date,
 Enddate date,
-Type enum('dailylease','monthlylease')
+Type enum('dailylease','monthlylease'),
+foreign key(vehicleid) references vehicle(vehicleid),
+foreign key(customerid) references customer(customerid)
 );
 
 CREATE TABLE Payment(
