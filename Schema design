@@ -1,4 +1,4 @@
--------------------- Vehicle Table ---------------------
+-------------------- Car Rental System ---------------------
 
 CREATE TABLE Vehicle (
     vehicleID INT PRIMARY KEY,
@@ -37,3 +37,10 @@ paymentdate DATE,
 amount DECIMAL(10,2),
 FOREIGN KEY (LeaseID) REFERENCES Lease(LeaseID)
 );
+
+INSERT INTO Vehicle (vehicleID,make,model,year, dailyRate,status,passengerCapacity,engineCapacity) 
+VALUES (1,'Toyota','Camry',2022,50.00,'1',4,1450),
+    (2,'Honda','Civic',2023,45.00,'1',7,1500),
+    (3,'Ford','Focus',2022,48.00,'0',4,1400),
+    (4,'Nissan','Altima',2023,52.00,'1',7,1200),
+    (5,'Cheverlet','Malibu',2022,47.00,'1',4,1800);
