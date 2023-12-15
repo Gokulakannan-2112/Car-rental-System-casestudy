@@ -14,7 +14,7 @@ CREATE TABLE Vehicle (
 CREATE TABLE Customer (
     customerID INT PRIMARY KEY,
     firstName VARCHAR(100),
-    lastName VARCHAR(100,
+    lastName VARCHAR(100),
     email VARCHAR(100),
     phoneNumber VARCHAR(20)
 );
@@ -25,7 +25,7 @@ vehicleid int,
 customerid int,
 Startdate date,
 Enddate date,
-Type enum('dailylease','monthlylease'),
+Type enum('daily','monthly'),
 foreign key(vehicleid) references vehicle(vehicleid),
 foreign key(customerid) references customer(customerid)
 );
@@ -52,3 +52,11 @@ VALUES
 (3, 'Robert', 'Johnson', 'robert@example.com', '555-789-1234'),
 (4, 'Sarah', 'Brown', 'sarah@example.com', '555-456-7890'),
 (5, 'David', 'Lee', 'david@example.com', '555-987-6543');
+
+INSERT INTO lease (leaseid, vehicleid, customerid, startdate, enddate,type)
+VALUES
+(1, 1, 1, '2023-01-01', '2023-01-05', 'Daily'),
+(2, 2, 2, '2023-02-15', '2023-02-28', 'Monthly'),
+(3, 3, 3, '2023-03-10', '2023-03-15', 'Daily'),
+(4, 4, 4, '2023-04-20', '2023-04-30', 'Monthly'),
+(5, 5, 5, '2023-05-05', '2023-05-10', 'Daily');
