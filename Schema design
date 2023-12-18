@@ -61,7 +61,7 @@ VALUES
 (4, 4, 4, '2023-04-20', '2023-04-30', 'Monthly'),
 (5, 5, 5, '2023-05-05', '2023-05-10', 'Daily');
 
-INSERT INTO Payment(paymentId,LeaseId,paymentdate, amount)
+INSERT INTO Payment(paymentID,LeaseID,paymentdate, amount)
 VALUES
 (1,1,'2023-01-03',200.00),
 (2,2,'2023-02-20',1000.00),
