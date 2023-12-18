@@ -53,10 +53,18 @@ VALUES
 (4, 'Sarah', 'Brown', 'sarah@example.com', '555-456-7890'),
 (5, 'David', 'Lee', 'david@example.com', '555-987-6543');
 
-INSERT INTO lease (leaseid, vehicleid, customerid, startdate, enddate,type)
+INSERT INTO Lease (LeaseID, vehicleID, customerID, Startdate, Enddate,type)
 VALUES
 (1, 1, 1, '2023-01-01', '2023-01-05', 'Daily'),
 (2, 2, 2, '2023-02-15', '2023-02-28', 'Monthly'),
 (3, 3, 3, '2023-03-10', '2023-03-15', 'Daily'),
 (4, 4, 4, '2023-04-20', '2023-04-30', 'Monthly'),
 (5, 5, 5, '2023-05-05', '2023-05-10', 'Daily');
+
+INSERT INTO Payment(paymentId,LeaseId,paymentdate, amount)
+VALUES
+(1,1,'2023-01-03',200.00),
+(2,2,'2023-02-20',1000.00),
+(3,3,'2023-03-12',75.00),
+(4,4,'2023-04-25',900.00),
+(5,5,'2023-05-07',60.00);
