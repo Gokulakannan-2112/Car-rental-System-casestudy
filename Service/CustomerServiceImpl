@@ -32,8 +32,18 @@ public class CustomerServiceImpl implements ICustomerService {
 
 	@Override
 	public int updateCustomer(Customer customer) {
-		// TODO Auto-generated method stub
-		return 0;
+		int result = 0;
+		try {
+			result = iCustomerDAO.updateCustomer(customer);
+			}catch (ClassNotFoundException cnfe) {
+				System.out.println("Looks like JDBC driver is NOT loaded.");
+			}catch(SQLException se) {
+				System.out.println("Either url, username or password is wrong or duplicate record");
+			}catch(CustomerNotFoundException cnfe) {
+				System.out.println(cnfe.getMessage());
+			}
+		
+		return result;
 	}
 
 	@Override
